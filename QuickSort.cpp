@@ -3,7 +3,7 @@
 using namespace std;
 
 int partition(vector<int>& arr, int low, int high) {
-    int pivot = arr[high];   // Choose last element as pivot
+    int pivot = arr[high];  
     int i = low - 1;
 
     for (int j = low; j < high; j++) {
@@ -13,7 +13,6 @@ int partition(vector<int>& arr, int low, int high) {
         }
     }
 
-    // Put pivot at its correct position
     swap(arr[i + 1], arr[high]);
 
     return i + 1;
